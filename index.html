@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICES LLC | Exterior Power Washing & Window Cleaning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-blue: #007bff; /* Bright blue for water and trustworthiness */
+            --highlight-yellow: #ffc107; /* Pop color for safety/creative energy */
+            --light-bg: #e3f2fd;
+            --text-dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: var(--text-dark); background-color: var(--white); scroll-behavior: smooth; }
+
+        /* Navigation - Streamlined */
+        nav { background: rgba(255, 255, 255, 0.95); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 90%; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 2rem; font-weight: 900; color: var(--main-blue); letter-spacing: -1.5px; }
+        .logo-small { color: var(--text-dark); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 700; font-size: 1rem; }
+
+        /* CREATIVE HERO: Uses image_29.png as a grand entrance fallback and links the van image */
+        .hero { 
+            position: relative;
+            height: 95vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://imgur.com/8N691gO.png') center/cover; /* Standard hero fallback: image_29.png */
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; margin-top: 70px;
+        }
+
+        .hero h1 { font-size: 4rem; text-transform: uppercase; line-height: 1; margin: 0; }
+        .hero h1 span { color: var(--highlight-yellow); }
+        .hero-sub { font-size: 1.5rem; margin-top: 10px; font-weight: 300; }
+        .btn-call { background: var(--main-blue); color: white; padding: 20px 50px; text-decoration: none; border-radius: 50px; font-weight: 900; font-size: 1.2rem; transition: 0.3s; margin-top: 30px; display: inline-block; box-shadow: 0 8px 15px rgba(0,0,0,0.3); }
+        .btn-call:hover { background: var(--white); color: var(--main-blue); }
+
+        /* WELCOME & DICES STORY: Integrated 'image_1.png' and 'image_28.png' */
+        .welcome { padding: 100px 10%; display: flex; align-items: center; gap: 50px; flex-wrap: wrap; background: var(--light-bg); }
+        .welcome-text { flex: 2; min-width: 300px; }
+        .welcome-photos { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px; }
+        .owner-pic { width: 100%; border-radius: 20px; box-shadow: 10px 10px 0 var(--main-blue); }
+        .miguel-story { width: 100%; border-radius: 10px; transform: rotate(-5deg); filter: grayscale(1); box-shadow: 10px 10px 20px rgba(0,0,0,0.3); }
+
+        /* THE SLIDER/WORK SECTION: Uses a basic HTML/CSS simple slider placeholder */
+        .work-slider { padding: 80px 5%; background: var(--white); text-align: center; overflow: hidden; }
+        .slider { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
+        .slider img { max-width: 100%; height: auto; display: block; }
+
+        /* SERVICE GALLERY CARDS: Simple, clean structure linking 'image_0.png', 'image_3.png', 'image_25.png' */
+        .service-gallery { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .gallery-card { border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; }
+        .gallery-card img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s; }
+        .gallery-card:hover img { transform: scale(1.05); }
+        .gallery-card h3 { position: absolute; bottom: 20px; left: 20px; color: white; margin: 0; font-weight: 900; background: rgba(0,123,255,0.8); padding: 5px 15px; border-radius: 5px; }
+
+        /* CONTACT SECTION */
+        .contact { padding: 80px 10%; text-align: center; background: #fafafa; }
+        .contact strong { color: var(--main-blue); font-size: 1.5rem; }
+
+        .footer { background: #333; color: var(--white); text-align: center; padding: 20px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DICES <span class="logo-small">LLC</span></div>
+        <div class="nav-links">
+            <a href="#welcome">About</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Estimate</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Expert Care. <span>Brilliant Results.</span></h1>
+            <p class="hero-sub">Licensed OKC & Bethany Exterior Technicians</p>
+            <a href="#contact" class="btn-call">Request Your Free Estimate</a>
+        </div>
+    </section>
+
+    <section id="welcome" class="welcome">
+        <div class="welcome-text">
+            <h2>Serving OKC Since 2024</h2>
+            <p>At <strong>Dices LLC</strong>, we treat your property like our own. Whether it’s restoring the shine of a brick facade or ensuring crystal clear, streak-free windows, our passion is making things last. We believe "Good Enough" is never good enough.</p>
+        </div>
+        <div class="welcome-photos">
+            <img src="https://i.imgur.com/T0b4M3B.png" class="owner-pic" alt="Dices Technician Cleaning">
+            
+            <img src="https://i.imgur.com/K0r8L5M.png" class="miguel-story" alt="Magic Miguel Sprayer and Ladder">
+            <p style="font-size:0.8rem; font-style:italic; text-align:center; transform:rotate(-5deg)">"I let his work speak for itself."</p>
+        </div>
+    </section>
+
+    <section id="work" class="work-slider">
+        <h2>Our Work In Action</h2>
+        <p>From OKC to Bethany, we make it sparkle.</p>
+        <div class="slider">
+            <img src="https://imgur.com/8N691gO.png" alt="Grand Stone Home: image_29.png">
+            <img src="https://imgur.com/hYfE5bE.png" alt="Driveway Transformation: image_3.png">
+        </div>
+    </section>
+
+    <section id="services" class="service-gallery">
+        <h2>What We Wash</h2>
+        
+        <div class="gallery-card">
+            <img src="https://imgur.com/N54O77K.png" alt="Dices Van with Phone Number">
+            <h3>Window & Gutter</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://imgur.com/hYfE5bE.png" alt="Man Pressure Washing Driveway">
+            <h3>Driveways & Siding</h3>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://imgur.com/UfH6rS8.png" alt="Technician on Deck with Poles">
+            <h3>Roof & Solar (Soft Wash)</h3>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Make It New Again</h2>
+        <p>Get a free, non-binding estimate for your next cleaning project.</p>
+        <strong>Call or Text (405) 902-7444</strong>
+    </section>
+
+    <div class="footer">
+        © 2026 Dices LLC. serving OKC, Bethany, and surrounding areas. Licensed & Insured.
+    </div>
+
+</body>
+</html>
