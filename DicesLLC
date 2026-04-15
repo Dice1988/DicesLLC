@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dices LLC | Professional Pressure Washing OKC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dices-blue: #00a8ff;
+            --dices-yellow: #fbc531;
+            --dices-black: #1e272e;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; color: var(--dices-black); line-height: 1.6; background-color: #f4f4f4; }
+        
+        /* Welcoming Header */
+        header { 
+            background: var(--dices-black); 
+            color: var(--white); 
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 5px solid var(--dices-yellow);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-container img { height: 60px; border-radius: 5px; }
+        .contact-top { text-align: right; font-weight: bold; }
+        .contact-top span { color: var(--dices-yellow); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover; background-position: center;
+            height: 70vh; display: flex; flex-direction: column; justify-content: center; 
+            align-items: center; text-align: center; color: var(--white); padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin: 0; text-transform: uppercase; border-bottom: 4px solid var(--dices-blue); }
+        .hero p { font-size: 1.5rem; margin: 20px 0; color: var(--dices-yellow); font-weight: bold; }
+        .cta-btn { 
+            background: var(--dices-blue); color: white; padding: 15px 40px; 
+            text-decoration: none; border-radius: 50px; font-weight: 900; 
+            font-size: 1.2rem; transition: 0.3s; border: 2px solid var(--dices-blue);
+        }
+        .cta-btn:hover { background: var(--dices-yellow); color: var(--dices-black); border-color: var(--dices-yellow); }
+
+        /* Trust Bar */
+        .trust-bar { background: var(--dices-yellow); color: var(--dices-black); padding: 15px; text-align: center; font-weight: bold; font-size: 1.1rem; }
+
+        /* Services Grid */
+        .services { padding: 60px 5%; text-align: center; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
+        .service-card { 
+            background: var(--white); padding: 30px; border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 5px solid var(--dices-blue);
+            transition: 0.3s;
+        }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card i { color: var(--dices-blue); margin-bottom: 15px; }
+
+        /* Financing & Info Section */
+        .info-split { display: flex; flex-wrap: wrap; background: var(--dices-black); color: white; padding: 60px 5%; gap: 40px; }
+        .info-box { flex: 1; min-width: 300px; }
+        .info-box h2 { color: var(--dices-yellow); font-size: 2rem; }
+        .highlight { color: var(--dices-blue); font-weight: bold; }
+
+        /* 5-Star Reviews */
+        .reviews { padding: 60px 5%; background: #eee; text-align: center; }
+        .review-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px; }
+        .review-card { background: white; padding: 20px; border-radius: 10px; width: 300px; text-align: left; position: relative; }
+        .stars { color: #f1c40f; margin-bottom: 10px; }
+        
+        /* Footer */
+        footer { background: var(--dices-black); color: white; padding: 40px 5%; text-align: center; }
+        .social-links a { color: var(--dices-yellow); font-size: 2rem; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.webp" alt="Dices LLC Logo">
+            <div>
+                <div style="font-size: 1.5rem; font-weight: 900; letter-spacing: 1px;">DICES <span style="color:var(--dices-blue)">LLC</span></div>
+                <div style="font-size: 0.8rem; color: var(--dices-yellow);">Est. 2024 | Licensed & Insured</div>
+            </div>
+        </div>
+        <div class="contact-top">
+            Call/Text: <span>405-902-7444</span><br>
+            <small>Always On Time, Never Late!</small>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Trust The <span>Process</span></h1>
+        <p>Expert Exterior Cleaning for All of OKC</p>
+        <div style="margin-bottom: 25px;">
+            <span style="background:var(--dices-yellow); color:black; padding: 5px 15px; font-weight:bold; border-radius:5px;">FINANCING AVAILABLE</span>
+        </div>
+        <a href="mailto:diceswindowllc@gmail.com" class="cta-btn">Get A Free Quote</a>
+    </section>
+
+    <div class="trust-bar">
+        <i class="fas fa-check-circle"></i> Reasonably Priced • <i class="fas fa-truck"></i> 2 Trucks Fully Equipped • <i class="fas fa-clock"></i> 100% On-Time Guarantee
+    </div>
+
+    <section class="services">
+        <h2>Professional Solutions</h2>
+        <p>Using top-quality <strong>Zep Chemicals</strong> for the best results.</p>
+        <div class="service-grid">
+            <div class="service-card"><i class="fas fa-home fa-3x"></i><h3>Siding & Roofing</h3><p>Soft wash and high-pressure options for a total home refresh.</p></div>
+            <div class="service-card"><i class="fas fa-road fa-3x"></i><h3>Driveways & Sidewalks</h3><p>Blast away oil stains and grime from concrete surfaces.</p></div>
+            <div class="service-card"><i class="fas fa-store fa-3x"></i><h3>Store Fronts</h3><p>Keep your business welcoming for every customer.</p></div>
+            <div class="service-card"><i class="fas fa-utensils fa-3x"></i><h3>Restaurants</h3><p>Specialized grease and outdoor dining area cleaning.</p></div>
+            <div class="service-card"><i class="fas fa-paint-roller fa-3x"></i><h3>Graffiti Removal</h3><p>Fast and effective removal to restore your property.</p></div>
+            <div class="service-card"><i class="fas fa-tint fa-3x"></i><h3>Windows & Gutters</h3><p>Crystal clear glass and free-flowing drainage systems.</p></div>
